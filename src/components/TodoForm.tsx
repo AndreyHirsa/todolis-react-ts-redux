@@ -2,7 +2,8 @@ import { ChangeEvent, useState } from "react";
 import { useDispatch } from "react-redux";
 import { addTodo } from "../redux/actions/ADD_TODO";
 import firebase from 'firebase';
-import { ITodo } from "../interfaces/types";
+import { ITodo} from "../interfaces/ITodo";
+import React from "react";
 
 export const TodoForm: React.FC = () => {
   const [inputText, setInputText] = useState("");

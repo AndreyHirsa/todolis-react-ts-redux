@@ -1,4 +1,4 @@
-import { TodosActionTypes } from "../../interfaces/types";
+import { TodosActionTypes} from "../../interfaces/TodosActionTypes";
 
 export const DELETE_TODO = "DELETE_TODO";
 

@@ -2,8 +2,10 @@ import { todos } from "../states/states";
 import { ADD_TODO } from "../actions/ADD_TODO";
 import { DELETE_TODO } from "../actions/DELETE_TODO";
 import { UPDATE_TODO } from "../actions/UPDATE_TODO";
-import { ITodo, TodosActionTypes } from "../../interfaces/types";
-import {PUT_DATA,} from "../saga/saga";
+import {ITodo} from "../../interfaces/ITodo";
+import {TodosActionTypes} from "../../interfaces/TodosActionTypes";
+import {PUT_DATA} from "../actions/PUT_DATA";
+
 
 export function TodoReducer(state = todos, action: TodosActionTypes): ITodo[] {
   switch (action.type) {
@@ -22,7 +24,7 @@ export function TodoReducer(state = todos, action: TodosActionTypes): ITodo[] {
         return todo;
       });
     case PUT_DATA:
-      return action.payload
+      return action.payload;
     default:
       return state;
   }

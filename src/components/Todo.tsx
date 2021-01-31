@@ -1,8 +1,8 @@
 import { useDispatch } from "react-redux";
-import { ITodoProps } from "../interfaces/types";
+import { ITodoProps} from "../interfaces/ITodoProps";
 import { deleteTodo } from "../redux/actions/DELETE_TODO";
 import { updateTodo } from "../redux/actions/UPDATE_TODO";
-
+import React from "react";
 
 
 export const Todo: React.FC<ITodoProps> = ({

@@ -1,3 +1,3 @@
-import { ITodo } from "../../interfaces/types";
+import { ITodo} from "../../interfaces/ITodo";
 
 export let todos:ITodo[]=[];

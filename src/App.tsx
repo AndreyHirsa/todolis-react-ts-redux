@@ -3,7 +3,7 @@ import "./App.css";
 import { TodoContainer } from "./components/TodoContainer";
 import { TodoForm } from "./components/TodoForm";
 import {useDispatch} from "react-redux";
-import {loadData} from "./redux/saga/saga";
+import {loadData} from "./redux/actions/LOAD_DATA";
 
 const App: React.FC = () => {
 
