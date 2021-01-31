@@ -1,6 +1,7 @@
 import { ADD_TODO } from "../redux/actions/ADD_TODO";
 import { DELETE_TODO } from "../redux/actions/DELETE_TODO";
 import { UPDATE_TODO } from "../redux/actions/UPDATE_TODO";
+import {PUT_DATA} from "../redux/saga/saga";
 
 export interface ITodoProps {
   todoName: string;
@@ -35,4 +36,9 @@ export interface IUpdateTodo {
   };
 }
 
-export type TodosActionTypes = IUpdateTodo | IAddTodo | IDeleteTodo;
+export interface IPutData{
+  type:typeof PUT_DATA;
+  payload:ITodo[];
+}
+
+export type TodosActionTypes = IUpdateTodo | IAddTodo | IDeleteTodo | IPutData;

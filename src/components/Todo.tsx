@@ -3,6 +3,8 @@ import { ITodoProps } from "../interfaces/types";
 import { deleteTodo } from "../redux/actions/DELETE_TODO";
 import { updateTodo } from "../redux/actions/UPDATE_TODO";
 
+
+
 export const Todo: React.FC<ITodoProps> = ({
   todoName,
   key,
@@ -10,6 +12,7 @@ export const Todo: React.FC<ITodoProps> = ({
   todo,
   index,
 }) => {
+
   let dispatch = useDispatch();
 
   return (

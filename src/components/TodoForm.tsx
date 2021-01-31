@@ -7,6 +7,7 @@ import { ITodo } from "../interfaces/types";
 export const TodoForm: React.FC = () => {
   const [inputText, setInputText] = useState("");
   const [buttonState, setButtonState] = useState(true);
+
   let dispatch = useDispatch();
 
   const inputTextHandler = (e: ChangeEvent<HTMLInputElement>) => {

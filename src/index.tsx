@@ -6,6 +6,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {Provider} from 'react-redux'
 import { store } from './redux/store/store';
+import ReduxSagaFirebase from "redux-saga-firebase";
 
 const firebaseConfig = {
   apiKey: "AIzaSyDdyFVkjVf9ouBKIL9aSC8r7YhVkO-S4-k",
@@ -16,8 +17,8 @@ const firebaseConfig = {
   appId: "1:610292566077:web:16b086706d7910d8c48254"
 };
 // Initialize Firebase
-firebase.initializeApp(firebaseConfig);
-
+export const firebaseApp=firebase.initializeApp(firebaseConfig);
+export const rsf = new ReduxSagaFirebase(firebaseApp)
 
 
 ReactDOM.render(
