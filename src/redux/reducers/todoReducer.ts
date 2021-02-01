@@ -1,13 +1,12 @@
 import { todos } from "../states/states";
-import { ADD_TODO } from "../actions/ADD_TODO";
-import { DELETE_TODO } from "../actions/DELETE_TODO";
-import { UPDATE_TODO } from "../actions/UPDATE_TODO";
-import {ITodo} from "../../interfaces/ITodo";
-import {TodosActionTypes} from "../../interfaces/TodosActionTypes";
-import {PUT_DATA} from "../actions/PUT_DATA";
+import { ADD_TODO } from "../actions/addTodoAction";
+import { DELETE_TODO } from "../actions/deleteTodoAction";
+import { UPDATE_TODO } from "../actions/updateTodoAction";
+import { ITodo } from "../../interfaces/ITodo";
+import { TodosActionTypes } from "../../interfaces/TodosActionTypes";
+import { PUT_DATA } from "../actions/putDataAction";
 
-
-export function TodoReducer(state = todos, action: TodosActionTypes): ITodo[] {
+export function todoReducer(state = todos, action: TodosActionTypes): ITodo[] {
   switch (action.type) {
     case ADD_TODO:
       return [...state, action.payload];

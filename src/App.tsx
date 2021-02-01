@@ -1,17 +1,15 @@
-import React, {useEffect} from "react";
-import "./App.css";
-import { TodoContainer } from "./components/TodoContainer";
-import { TodoForm } from "./components/TodoForm";
-import {useDispatch} from "react-redux";
-import {loadData} from "./redux/actions/LOAD_DATA";
+import React, { useEffect } from "react";
+import { TodoContainer } from "./components/TodoContainer/TodoContainer";
+import { TodoForm } from "./components/TodoForm/TodoForm";
+import { useDispatch } from "react-redux";
+import { loadData } from "./redux/actions/loadDataAction";
 
 const App: React.FC = () => {
+  const dispatch = useDispatch();
 
-  const dispatch=useDispatch()
-
-  useEffect(()=>{
-      dispatch(loadData());
-  })
+  useEffect(() => {
+    dispatch(loadData());
+  });
 
   return (
     <div className="wrapper">

@@ -1,9 +1,9 @@
-import {ITodo} from "./ITodo";
+import { ITodo } from "./ITodo";
 
 export interface ITodoProps {
-    todoName: string;
-    key: number;
-    completed: boolean;
-    todo: ITodo;
-    index: number;
+  todoName: string,
+  key: number,
+  completed: boolean,
+  todo: ITodo,
+  index: number
 }

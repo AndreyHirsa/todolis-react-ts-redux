@@ -9,7 +9,6 @@ body {
   box-sizing: border-box;
 }
 
-
 button{
   padding: 0;
   background-color: transparent;
@@ -24,13 +23,6 @@ i:hover{
   transform: scale(1.3);
 }
 
-.todoForm{
-  margin:0;
-  width: 500px;
-  height: 40px;
-  display: flex;
-}
-
 .wrapper{
   width: 100vw;
   height: 100vh;
@@ -40,54 +32,11 @@ i:hover{
   background-color:#FD8B38;
 }
 
-
 .inner{
   width: 500px;
   height: 500px;
   background-color: #FFFFFF;
 }
-
-.todoName{
-  width: 400px;
-  height: 100%;
-}
-
-.buttonAdd{
-  transition: 0.2s;
-  padding:0;
-  width:100px;
-  border:none;
-  background-color:#096ad6;
-  color:#FFFFFF;
-}
-
-.disabled{
-  background-color: #9699a3;
-}
-
-.todoContainer{
-  width:100%;
-  height:460px;
-}
-
-input[type="text"]{
-  border:1px solid #000000;
-}
-
-.todo{
-  justify-content: space-between;
-  padding: 10px;
-  display: flex;
-  height: 40px;
-  align-items: center;
-  border-bottom:1px solid #000000;
-}
-
-.completed{
-  text-decoration:line-through;
-  color: #9699a3;
-}
-
 
 .fa-times{
   color: red;

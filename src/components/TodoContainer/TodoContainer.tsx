@@ -1,14 +1,13 @@
 import React from "react";
-import {useSelector} from "react-redux";
-import { ITodo} from "../interfaces/ITodo";
-import { Todo } from "./Todo";
-
-
+import { useSelector } from "react-redux";
+import { ITodo } from "../../interfaces/ITodo";
+import { Todo } from "../Todo/Todo";
+import { TodoWrapper } from "./TodoContainerStyles";
 
 export const TodoContainer: React.FC = () => {
   let todos = useSelector((state: ITodo[]) => state);
   return (
-    <div className="todoContainer">
+    <div style={TodoWrapper}>
       {todos.map((todo: ITodo, index: number) => {
         return (
           <Todo
