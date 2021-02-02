@@ -1,4 +1,4 @@
-import { UPDATE_TODO } from "../redux/actions/updateTodoAction";
+import { UPDATE_TODO } from "redux/actions/updateTodoAction";
 
 export interface IUpdateTodo {
   type: typeof UPDATE_TODO,

@@ -1,4 +1,4 @@
-import { TodosActionTypes } from "../../interfaces/TodosActionTypes";
+import { TodosActionTypes } from "interfaces/TodosActionTypes";
 
 export const UPDATE_TODO = 'UPDATE__TODO';
 

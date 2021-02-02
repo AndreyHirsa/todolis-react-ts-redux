@@ -1,3 +1,3 @@
-import { ITodo} from "../../interfaces/ITodo";
+import { ITodo} from "interfaces/ITodo";
 
 export const todos:ITodo[]=[];

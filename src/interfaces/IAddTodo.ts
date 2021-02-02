@@ -1,4 +1,4 @@
-import { ADD_TODO } from "../redux/actions/addTodoAction";
+import { ADD_TODO } from "redux/actions/addTodoAction";
 import { ITodo } from "./ITodo";
 
 export interface IAddTodo {

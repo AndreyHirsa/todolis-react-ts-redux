@@ -1,10 +1,10 @@
 import { takeEvery, call, put } from "redux-saga/effects";
-import { rsf } from "../../services/fireBaseService";
-import { putData } from "../actions/putDataAction";
-import { LOAD_DATA } from "../actions/loadDataAction";
-import { DELETE_TODO } from "../actions/deleteTodoAction";
-import { UPDATE_TODO } from "../actions/updateTodoAction";
-import { TodosActionTypes } from "../../interfaces/TodosActionTypes";
+import { rsf } from "services/fireBaseService";
+import { putData } from "redux/actions/putDataAction";
+import { LOAD_DATA } from "redux/actions/loadDataAction";
+import { DELETE_TODO } from "redux/actions/deleteTodoAction";
+import { UPDATE_TODO } from "redux/actions/updateTodoAction";
+import { TodosActionTypes } from "interfaces/TodosActionTypes";
 
 function* getTodos() {
   try {

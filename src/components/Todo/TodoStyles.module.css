@@ -1,0 +1,18 @@
+.todoContainer {
+  justify-content: space-between;
+  padding: 10px;
+  display: flex;
+  height: 40px;
+  align-items: center;
+  border-bottom: 1px solid #000000;
+}
+
+.todoTitle {
+  width: 400px;
+  height: 100%;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #9699a3;
+}

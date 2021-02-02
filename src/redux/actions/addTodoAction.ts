@@ -1,5 +1,5 @@
-import { ITodo } from "../../interfaces/ITodo";
-import { TodosActionTypes } from "../../interfaces/TodosActionTypes";
+import { ITodo } from "interfaces/ITodo";
+import { TodosActionTypes } from "interfaces/TodosActionTypes";
 
 export const ADD_TODO = 'ADD_TODO';
 
